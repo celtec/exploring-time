@@ -1,0 +1,16 @@
+task default: %w[awesome hello_world]
+
+desc "Hello world"
+task :hello_world do
+  puts "Hello, world!"
+end
+
+desc "Awesome task"
+task :awesome do
+  puts "Awesome rake task!!!"
+end
+
+desc "Hello name"
+task :hello, [:name] do |task, args|
+  puts "Hi, #{args[:name]} from #{task}!"
+end
