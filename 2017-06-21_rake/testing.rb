@@ -7,7 +7,6 @@ end
 module Testing2
 
   def self.setup
-    require 'pry';binding.pry
     puts "Setup..."
   end
 
